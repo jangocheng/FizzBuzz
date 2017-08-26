@@ -11,7 +11,7 @@ An assignment for a job application. Written in C# using Dotnet Core for Linux
 
 ## Features
 ### A pre-commit hook which tests the code before commiting.
-```
+``` shell
 if dotnet test FizzBuzz-Tests/FizzBuzz-Tests.csproj | egrep --quiet 'Failed: 0'; then
   echo Test passed
 else
