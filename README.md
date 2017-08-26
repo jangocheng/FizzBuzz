@@ -7,7 +7,6 @@ An assignment for a job application. Written in C# using Dotnet Core for Linux
 * Run `dotnet restore`
 * Run the application using `dotnet run -p cli/cli.csproj`
 * Test the application using `dotnet test FizzBuzz-Tests/FizzBuzz-Tests.csproj`
-*
 
 
 ## Features
