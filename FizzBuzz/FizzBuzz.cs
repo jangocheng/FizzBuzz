@@ -3,6 +3,7 @@
 
 namespace FizzBuzz
 {
+
   /// <summary>
   ///  FizzRunner
   /// </summary>
@@ -13,6 +14,9 @@ namespace FizzBuzz
     ///  The amount of rounds you want to run the Fizz Buzz.
     /// </summary>
     public int rounds;
+    /// <summary>
+    /// The actual results
+    /// </summary>
     public string[] results;
 
     /// <summary>
@@ -20,7 +24,9 @@ namespace FizzBuzz
     /// </summary>
     /// <param name="_rounds">Takes the number of rounds you want the FizzRunner to use</param>
     public FizzRunner(int _rounds) {
+      // Set the rounds
       rounds = _rounds;
+      // Set the results by generating them
       results = Generate();
     }
 
@@ -28,18 +34,19 @@ namespace FizzBuzz
     ///  The function which generates the Fizz Buzz
     /// </summary>
     private string[] Generate() {
-      var fizzResults = new string[rounds + 1];
+      string[] fizzResults = new string[rounds + 1];
+
       for (int i = 1; i <= rounds; i++) {
         if (i % 15 == 0) {
-          fizzResults[i] = "fizzBuzz";
+          fizzResults[i] = "FizzBuzz";
         }
 
         if (i  % 5 == 0) {
-          fizzResults[i] = "buzz"; 
+          fizzResults[i] = "Buzz";
         }
 
         if (i % 3 == 0) {
-          fizzResults[i] = "fizz";
+          fizzResults[i] = "Fizz";
         }
       }
       return fizzResults;
