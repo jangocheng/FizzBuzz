@@ -38,17 +38,13 @@ namespace FizzBuzz
       string[] fizzResults = new string[rounds + 1];
 
       for (int i = 1; i <= rounds; i++) {
-        if (i % 15 == 0) {
-          fizzResults[i] = "FizzBuzz";
-        }
+        string result =
+          i % 15 == 0 ? "FizzBuzz" :
+          i % 5  == 0 ? "Buzz" :
+          i % 3 == 0 ? "Fizz" :
+          null;
 
-        if (i  % 5 == 0) {
-          fizzResults[i] = "Buzz";
-        }
-
-        if (i % 3 == 0) {
-          fizzResults[i] = "Fizz";
-        }
+          fizzResults[i] = result;
       }
       return fizzResults;
     }
