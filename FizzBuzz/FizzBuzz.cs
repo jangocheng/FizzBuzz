@@ -41,7 +41,7 @@ namespace FizzBuzz
         string result =
           i % 15 == 0 ? "FizzBuzz" :
           i % 5  == 0 ? "Buzz" :
-          i % 3 == 0 ? "Fizz" :
+          i % 3  == 0 ? "Fizz" :
           null;
 
           fizzResults[i] = result;
