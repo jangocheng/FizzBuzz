@@ -33,6 +33,7 @@ namespace FizzBuzz
     /// <summary>
     ///  The function which generates the Fizz Buzz
     /// </summary>
+    /// <returns>Returns an array of results</returns>
     private string[] Generate() {
       string[] fizzResults = new string[rounds + 1];
 
@@ -52,6 +53,9 @@ namespace FizzBuzz
       return fizzResults;
     }
 
+    /// <summary>
+    ///  Print all results
+    /// </summary>
     public void PrintAll () {
       for (int i = 1; i <= rounds; i++) {
         Console.WriteLine(i + " " + results[i]);
