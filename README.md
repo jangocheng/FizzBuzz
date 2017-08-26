@@ -17,5 +17,5 @@ if dotnet test FizzBuzz-Tests/FizzBuzz-Tests.csproj | egrep --quiet 'Failed: 0';
 else
   echo Test failed
   exit 1
-ff
+fi
 ```
