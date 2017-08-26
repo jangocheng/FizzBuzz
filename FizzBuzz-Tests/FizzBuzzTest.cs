@@ -6,7 +6,7 @@ namespace TestApp
   public class Tests
   {
     [Fact]
-    public void TestFirstItem() {
+    public void TestThirdItem() {
       var fizz = new FizzRunner(100);
       var third = fizz.results[3];
 
